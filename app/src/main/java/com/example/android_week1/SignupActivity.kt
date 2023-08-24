@@ -10,8 +10,14 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -74,6 +80,7 @@ fun Signupinterface() {
 
         TextField(
             value = Firstname,
+            leadingIcon = { Icon(Icons.Default.Person, contentDescription ="firstnameicon" ) },
             onValueChange = { Firstname },
             label = { Text(text = "Firstname") },
             modifier = Modifier.fillMaxWidth()
@@ -82,6 +89,7 @@ fun Signupinterface() {
 
         TextField(
             value = Lastname,
+            leadingIcon = { Icon(Icons.Default.Person, contentDescription ="lastnameicon" )},
             onValueChange = { Lastname },
             label = { Text(text = "Lastname") },
             modifier = Modifier.fillMaxWidth()
@@ -89,6 +97,7 @@ fun Signupinterface() {
         Spacer(modifier = Modifier.height(17.dp))
         TextField(
             value = Phonenumber,
+            leadingIcon = { Icon(Icons.Default.Phone, contentDescription ="phonenumbericon" )},
             onValueChange = { Phonenumber },
             label = { Text(text = "Phonenumber") },
             modifier = Modifier.fillMaxWidth()
@@ -96,6 +105,7 @@ fun Signupinterface() {
         Spacer(modifier = Modifier.height(15.dp))
         TextField(
             value = Email,
+            leadingIcon = { Icon(Icons.Default.Email, contentDescription ="emailicon" )},
             onValueChange = { Email },
             label = { Text(text = " Email") },
             modifier = Modifier.fillMaxWidth()
@@ -103,6 +113,7 @@ fun Signupinterface() {
         Spacer(modifier = Modifier.height(15.dp))
         TextField(
             value = Password,
+            leadingIcon = { Icon(Icons.Default.Lock, contentDescription ="usernameicon" )},
             onValueChange = { Password },
             label = { Text(text = "Password") },
             modifier = Modifier.fillMaxWidth()

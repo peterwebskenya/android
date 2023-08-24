@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Android_week1"
         tools:targetApi="31">
         <activity
+            android:name=".imageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.Android_week1" />
+        <activity
             android:name=".SignupActivity"
             android:exported="false"
             android:label="@string/title_activity_signup"

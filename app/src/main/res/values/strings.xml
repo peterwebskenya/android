@@ -3,4 +3,5 @@
     <string name="title_activity_login">loginActivity</string>
     <string name="title_activity_loginactivity">loginactivity</string>
     <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_image">imageActivity</string>
 </resources>

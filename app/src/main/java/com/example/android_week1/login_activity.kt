@@ -11,8 +11,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -65,6 +69,7 @@ fun LoginInterface() {
 
         TextField(
             value = username,
+            leadingIcon = { Icon(Icons.Default.Person, contentDescription ="usernameicon" )},
             onValueChange = { username },
             label = { Text(text = "Username") },
             modifier = Modifier.fillMaxWidth()
@@ -73,6 +78,7 @@ fun LoginInterface() {
 
         TextField(
             value = password,
+            leadingIcon = { Icon(Icons.Default.Lock, contentDescription ="passwordicon" )},
             onValueChange = { password },
             label = { Text(text = "Password") },
             modifier = Modifier.fillMaxWidth()
