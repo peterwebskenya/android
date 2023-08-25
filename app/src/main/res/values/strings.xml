@@ -4,4 +4,7 @@
     <string name="title_activity_loginactivity">loginactivity</string>
     <string name="title_activity_signup">SignupActivity</string>
     <string name="title_activity_image">imageActivity</string>
+    <string name="title_activity_listviewwx">LISTVIEWWX</string>
+    <string name="title_activity_mpesalistview">m_pesalistview</string>
+    <string name="title_activity_scrolledlistview">Scrolledlistview</string>
 </resources>

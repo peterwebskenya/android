@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.magnifier
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -55,6 +56,14 @@ fun home(){
            gotologin.startActivity(Intent(gotologin,Login_activity::class.java))
 
        },
+           Spacer(modifier = Modifier.height(12.dp))
+           var gotoScroll = LocalContext.current
+               Button(onClick ={
+                   gotoScroll.startActivity(Intent(Scroll,Scrolledlistview::class.java))
+
+
+
+
 
 
 
@@ -62,7 +71,7 @@ fun home(){
        modifier = Modifier.fillMaxWidth()
 
        ) {
-           Text(text = "login")
+           Text(text = "GO TO SCROLL")
 
        }
 
